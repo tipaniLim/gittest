@@ -7,12 +7,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class HelloController {
 
-    
+
     @GetMapping("hello")
     public String hello(Model model) {
-        model.addAttribute("data", "main@@");
-        model.addAttribute("name", "Lim SO Jeong");
-        // main에서 추가
+        model.addAttribute("data", "test1");
+        model.addAttribute("name", "Jeong Tae Hui");
         return "hello";
     }
     
