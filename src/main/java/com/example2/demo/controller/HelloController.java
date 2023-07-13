@@ -12,6 +12,7 @@ public class HelloController {
     public String hello(Model model) {
         model.addAttribute("data", "main@@");
         model.addAttribute("name", "Lim SO Jeong");
+        // main에서 추가
         return "hello";
     }
     
